@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grégory vaste</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
@@ -16,174 +19,165 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
-    
-    <script src="./js/main.js"></script>
 </head>
-<body>
+
+<body class="bg-light">
     <header>
         <div class="container pt-5" id="main">
             <!-- Menu -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                    <a href="#" class="nav-brand h1 mr-2">Grégory VASTE</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_cv"
-                        aria-controls="navbar_cv" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar_cv">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#adresse">Coordonnées</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#diplomes">Diplômes</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#experiences">Experiences</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#competences">Compétences</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#acquis">Acquis</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            <!-- Adresse -->
-            <div id="adresse" class="row pt-5">
-                <div class="col-6">
-                    <ul class="mt-3 list-unstyled">
-                        <li>
-                            <span class="sr-only">Adresse</span>
-                            Rue Beausoleil bat 4 apt 2
-                            <br>
-                            13140 Miramas
-                            <i class="fas fa-map-marker-alt pl-1"></i>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+                <a href="#" class="nav-brand h1 mr-2">Grégory VASTE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_cv"
+                    aria-controls="navbar_cv" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_cv">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#dplm">Dîplomes</a>
                         </li>
-                        <li>
-                            <span class="sr-only">Courriel</span>
-                            gregory.vaste[at]gmail.com
-                            <i class="fas fa-at pl-1"></i>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#eps">Experiences</a>
                         </li>
-                        <li>
-                            <span class="sr-only">Téléphone</span>
-                            0698792615
-                            <i class="fas fa-phone-alt pl-1"></i>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#compe">Compétences</a>
                         </li>
-                        <li>
-                            Permis : B
-                            <i class="fas fa-car pl-1"></i>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#acquis">Acquis</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 text-right">
-                    <img src="./img/avatar_cv.png" alt="Mon avatar_cv" class="ml-5 mb-2 img-thumbnail">
+            </nav>
+            <!-- Adresse -->
+            <div class="row pt-3 mb-5">
+                <div class="col-6">
+                    <ul class="mt-3 list-unstyled">
+                        <li>Rue Beausoleil bat 4 apt 2</li>
+                        <li>13140 Miramas<i class="fas fa-map-marker-alt pl-1"></i></li>
+                        <li><a href="mailto:&#103;%72&#101;%67o%72y&#46;&#118;&#97;ste&#64;&#103;m&#97;i&#108;%2e&#99;om">gregory.vaste&#64;gmail.com</a> <i class="fas fa-at pl-1"></i></li>
+                        <li>0698792615<i class="fas fa-phone-alt pl-1"></i></li>
+                        <li>Permis:B<i class="fas fa-car pl-1"></i></li>
+                    </ul>
                 </div>
-        </div>
+                <div class="col-6">
+                    <img src="./img/avatar_cv.png" alt="Mon avatar_cv" class="img-fluid float-right">
+                </div>
+            </div>
     </header>
-    <div class="container" id="diplomes">
-        <div class="row">
-            <div class="col mb-4">
-                <h2 class="mb-3">Diplômes</h2>
-                <section>
-                    <h3 >AFPA Istres</h3>
-                    <span>Novembre 2020</span>
-                    <p>Titre Professionnelle Developpeur Web / Web Mobile.(en cours)</p>
-                    <h3>Lycée Nord-Caraïbes</h3>
-                    <span>Juin 2013</span>
-                    <p>Baccalauréat professionnel hôtellerie restauration.(Validé)</p>
-                    <h3>Lycée Nord-Caraïbes</h3>
-                    <span>Juin 2012</span>
-                    <p>Brevet D'Etudes Professionnelles.(Validé)</p>
-                </section>
+    <div class="container" id="corp">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col ">
+                <div class="bg-white p-3 shadow-sm rounded card h-100">
+                    <h2 id="dplm" class="mt-3 card-title"><u>Dîplomes</u></h2>
+                    <section>
+                        <h3 class="mt-4">Titre Professionnel Developpeur Web / Web Mobile.(en cours)</h3>
+                        <span>Novembre 2020</span>
+                        <p>AFPA Istres</p>
+                        <h3>Baccalauréat professionnel hôtellerie restauration.(Validé)</h3>
+                        <span>Juin 2013</span>
+                        <p>Lycée Nord-Caraïbes</p>
+                        <h3>Brevet D'Etudes Professionnel.(Validé)</h3>
+                        <span>Juin 2012</span>
+                        <p>Lycée Nord-Caraïbes</p>
+
+                    </section>
+                </div>
+
+            </div>
+            <div class="col ">
+                <div class="bg-white p-3 shadow-sm rounded card h-100 ">
+                    <h2 class="mt-3 card-title" id="eps"><u>Experience Professionnel</u></h2>
+                    <section class="mt-3">
+                        <h3>Chef De Parti</h3>
+                        <span>Février 2020</span>
+                        <p><a href="https://www.vallondevalrugues.com/fr/hotel-saint-remy-de-provence-5-etoiles">Vallons
+                                De
+                                Valrugues</a></p>
+                        <h3>Chef De parti</h3>
+                        <span>Mars 2019 - Octobre 2019</span>
+                        <p><a href="https://www.masdentremont.com/"> Mas D'Entremont</a></p>
+                        <h3>Second de cuisine</h3>
+                        <span>Novembre 2015 - Aout 2018</span>
+                        <p><a href="https://www.la-bateliere.com/">Batelière</a></p>
+                    </section>
+                </div>
+
             </div>
         </div>
-        <div class="row mb-4" id="experiences">
-            <div class="col">
-                <h2 class="mb-3">Experiences Professionnelles</h2>
-                <section>
-                    <h3>
-                        <a class="target-blank" href="https://www.vallondevalrugues.com/fr/hotel-saint-remy-de-provence-5-etoiles">Vallons DeValrugues</a>
-                    </h3>
-                    <span>Février 2020</span>
-                    <p>Chef De Parti</p>
-                    <h3>
-                        <a class="target-blank" href="https://www.masdentremont.com/">Mas D'Entremont</a>
-                    </h3>
-                    <span>Mars 2019 - Octobre 2019</span>
-                    <p>Chef De parti</p>
-                    <h3>
-                        <a class="target-blank" href="https://www.la-bateliere.com/">Batelière</a>
-                    </h3>
-                    <span>Novembre 2015 - Aout 2018</span>
-                    <p>Second de cuisine</p>
-                </section>
-            </div>
+        <div class="row">
+
         </div>
         <!-- Logiciel et language appris -->
-        <div id="competences" class="row mb-4">
+        <div class="row mt-4">
             <div class="col">
-                <h2 class="mb-3">Compétences</h2>
-                <h3 class="">Développement</h3>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        HTML
+                <div class="bg-white shadow-sm rounded p-3">
+                    <h2 class="text-center" id="compe"><u>Compétences</u></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="pt-4"><i>Développement</i></h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">HTML</div>
+                            </div>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">CSS</div>
+                            </div>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width:45%" aria-valuenow="40"
+                                    aria-valuemin="0" aria-valuemax="100">Java Script</div>
+                            </div>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width:20%" aria-valuenow="40"
+                                    aria-valuemin="0" aria-valuemax="100">PHP</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="mt-3"><i>Framework</i></h3>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width:50%" aria-valuenow="20"
+                                    aria-valuemin="0" aria-valuemax="100">Wordpress</div>
+                            </div>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="progress mt-3">
-                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        CSS
-                    </div>
-                </div>
-                <div class="progress mt-3">
-                    <div class="progress-bar" role="progressbar" style="width:45%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                        JavaScript
-                    </div>
-                </div>
-                <div class="progress mt-3">
-                    <div class="progress-bar" role="progressbar" style="width:20%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                        PHP
-                    </div>
-                </div>
-                <h3 class="mt-5">Framework</h3>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width:50%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                        Wordpress
-                    </div>
-                </div>
-                <div class="progress mt-3">
-                    <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                        Bootstrap
-                    </div>
-                </div>
+
+
+
+
             </div>
         </div>
-        <div id="acquis" class="row mb-3">
-            <div class="col">
-                <h2 class="my-3"><u>Acquis</u></h2>
-                <ul>
-                    <li>Autodidacte</li>
-                    <li>Créatif</li>
-                    <li>Sérieux</li>
-                    <li>Curieux</li>
-                    <li>Rigoureux</li>  
-                </ul>
+        <div class="row row-cols-1 row-cols-md-2 mt-3">
+            <div class="col mb-3">
+                <div class="bg-white p-3 shadow-sm rounded card h-100">
+                    <h2 class="mt-3 card-title" id="acquis"><u>Acquis</u></h2>
+                    <ul>
+                        <li>Autodidacte</li>
+                        <li>Créatif</li>
+                        <li>Sérieux</li>
+                        <li>Curieux</li>
+                        <li>Rigoureux</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col">
-                <h2 class="my-3"><u>Loisir</u></h2>
-                <ul>
-                    <li>Manga</li>
-                    <li>Pétanque</li>
-                    <li>Sport Collectif</li>
-                    <li>Investissement Boursier</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center bg-light py-2">
-                <p class="small mb-0">© 2021 Gregory Vaste - Tous droits réservés.</p>
+            <div class="col mb-3">
+                <div class="bg-white p-3 shadow-sm rounded card h-100">
+                    <h2 class="mt-2 card-title"><u>Loisirs</u></h2>
+                    <ul>
+                        <li>Manga</li>
+                        <li>Pétanque</li>
+                        <li>Sports Collectifs</li>
+                        <li>Investissements Boursiers</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
